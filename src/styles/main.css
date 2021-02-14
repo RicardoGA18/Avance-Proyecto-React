@@ -1,0 +1,346 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Fonts */
+/* Layout */
+.l-container {
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+}
+
+.l-secure {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Components */
+.StaticNav {
+  background-color: black;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.StaticNav .l-secure {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.StaticNav__Social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.StaticNav__Social img {
+  width: 18px;
+  height: 20px;
+  margin-left: 16px;
+}
+
+.StaticNav__Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.StaticNav__Info div {
+  margin-right: 26px;
+}
+
+.StaticNav__Info .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.StaticNav__Info .button svg {
+  margin-right: 8px;
+  width: 40px;
+  height: 36px;
+}
+
+.StaticNav__Info .button svg path {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.StaticNav__Info .button p {
+  color: white;
+  font-size: 12px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.StaticNav__Info .button:hover {
+  background: white;
+}
+
+.StaticNav__Info .button:hover p {
+  color: black;
+}
+
+.StaticNav__Info .button:hover svg path {
+  fill: black;
+}
+
+.StaticNav__Info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.StaticNav__Info .item img {
+  margin-right: 15px;
+  height: 20px;
+}
+
+.StaticNav__Info .item p {
+  color: white;
+  font-size: 12;
+}
+
+.Nav {
+  background: #3E3E3E;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Nav .l-secure {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Nav__Links {
+  height: 100%;
+}
+
+.Nav__Links ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav__Links ul li {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.Nav__Links ul li p {
+  color: white;
+  font-size: 16px;
+}
+
+.Nav__Links ul li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.Nav__Links ul li:nth-child(1) {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.Nav__Links ul li:nth-child(1):hover {
+  background: none;
+}
+
+.Nav__Buttons {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav__Buttons div {
+  margin-left: 38px;
+}
+
+.Nav__Cart img {
+  width: 33px;
+  height: 30px;
+}
+
+.Nav__User {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Nav__User img {
+  width: 26px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.Nav__User p {
+  color: white;
+  font-size: 12px;
+}
+
+.Nav__Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.Nav__Form input[type="search"] {
+  width: 230px;
+  height: 30px;
+  background: white;
+  padding: 6px 10px;
+  color: black;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Nav__Form input[type="search"]:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.Nav__Form input[type="image"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.Slider {
+  width: 100%;
+  height: calc( ( 100vw / 1440 ) * 580);
+  position: relative;
+}
+
+.Slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.Slider__Left, .Slider__Right {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.Slider__Left svg, .Slider__Right svg {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.Slider__Left svg path, .Slider__Right svg path {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.Slider__Left:hover svg, .Slider__Right:hover svg {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Slider__Left:hover svg path, .Slider__Right:hover svg path {
+  fill: white;
+}
+
+.Slider__Left {
+  left: 0;
+}
+
+.Slider__Right {
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

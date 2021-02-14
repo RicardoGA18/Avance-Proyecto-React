@@ -1,0 +1,102 @@
+.Nav{
+  background: #3E3E3E;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+  .l-secure{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__Links{
+    height: 100%;
+    ul{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      li{
+        list-style: none;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        cursor: pointer;
+        transition: .3s all;
+        p{
+          color: white;
+          font-size: 16px;
+        }
+      }
+      li:hover{
+        background-color: rgba(255,255,255,0.15);
+      }
+      li:nth-child(1){
+        padding: 0;
+        margin-right: 10px;
+      }
+      li:nth-child(1):hover{
+        background: none;
+      }
+    }
+  }
+  &__Buttons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    div{
+      margin-left: 38px;
+    }
+  }
+  &__Cart{
+    img{
+      width: 33px;
+      height: 30px;
+    }
+  }
+  &__User{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    img{
+      width: 26px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    p{
+      color: white;
+      font-size: 12px;
+    }
+  }
+  &__Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    input[type="search"]{
+      width: 230px;
+      height: 30px;
+      background: white;
+      padding: 6px 10px;
+      color: black;
+      font-size: 12px;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="search"]:focus{
+      outline:none !important;
+      outline-width: 0 !important;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+    input[type="image"]{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 25px;
+      right: 10px;
+    }
+  }
+}
